@@ -29,7 +29,7 @@ from sympy.utilities import default_sort_key
 # rename for usage from outside
 pprint_use_unicode = pretty_use_unicode
 pprint_try_use_unicode = pretty_try_use_unicode
-out_pretty = ''
+
 
 
 class PrettyPrinter(Printer):
@@ -1334,7 +1334,6 @@ class PrettyPrinter(Printer):
         a = []  # items in the numerator
         b = []  # items that are in the denominator (if any)
 
-        global out_pretty
         
         if self.order not in ('old', 'none'):
             args = product.as_ordered_factors()
